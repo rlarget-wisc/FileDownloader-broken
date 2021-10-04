@@ -26,7 +26,10 @@
         android:layout_marginTop="30dp"
         android:text="Stop"
         app:layout_constraintLeft_toLeftOf="@id/startButton"
-        app:layout_constraintTop_toBottomOf="@id/startButton" />
+        app:layout_constraintRight_toRightOf="@id/startButton"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintTop_toBottomOf="@id/startButton"
+        android:onClick="stopDownload"/>
 
     <Switch
         android:id="@+id/switch1"
@@ -37,5 +40,16 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="@id/stopButton"
         app:layout_constraintTop_toBottomOf="@id/stopButton" />
+
+    <TextView
+        android:id="@+id/progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        app:layout_constraintLeft_toLeftOf="@id/startButton"
+        app:layout_constraintRight_toRightOf="@id/startButton"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintBottom_toTopOf="@id/startButton"
+        android:text="" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
